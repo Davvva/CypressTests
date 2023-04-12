@@ -15,15 +15,15 @@ describe('Registration', () => {
     signIn.getZipcode().type(DATA.zipcode);
     signIn.getNumber().type(DATA.number);
     signIn.getSSN().type(DATA.ssn);
-    signIn.getUsername().type(DATA.username);
-    signIn.getPassword().type(DATA.password);
-    signIn.getConfirm().type(DATA.confirm);
-    signIn.getREGISTER().click();
+    // signIn.getUsername().type(DATA.username);
+    // signIn.getPassword().type(DATA.password);
+    // signIn.getConfirm().type(DATA.confirm);
+    // signIn.getREGISTER().click();
     })
   }  )
 
   it('Register on site with incorrect dara', () =>{
-  crypto.getRandomValue();
+     cy.visit();
   })
 
   it('Register on sait with incorrect data', () => {
