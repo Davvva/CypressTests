@@ -4,7 +4,7 @@ class Lesson3 {
 
         return  cy.visit('https://parabank.parasoft.com/parabank/register.htm');
     }
-    getFogotpassword(){
+    getForgotpassword(){
         return ('#loginPanel > :nth-child(2) > a');
     }
     getFirstname(){
