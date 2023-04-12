@@ -23,7 +23,7 @@ describe('Registration', () => {
   }  )
 
   it('Register on site with incorrect dara', () =>{
-
+  crypto.getRandomValue();
   })
 
   it('Register on sait with incorrect data', () => {
