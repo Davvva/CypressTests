@@ -12,12 +12,13 @@ it("Proverka vkladok saita polzovatelem", () => {
    lesson3.getState().type(LESSON3.state);
    lesson3.getZipcode().type(LESSON3.zipcode);
    lesson3.getSSN().type(LESSON3.ssn);
-   lesson3.getFindlogin.click();
-   cy.get('form').find('img').should('have.attr', 'src').should('include','My-Logo')
-   cy.get('#footerPanel > :nth-child(1) > :nth-child(1) > a').click();
-   cy.get('#footerPanel > :nth-child(1) > :nth-child(2) > a').click();
-   cy.get('#footerPanel > :nth-child(1) > :nth-child(3) > a').click();
-   cy.get('#footerPanel > :nth-child(1) > :nth-child(4) > a').click();
-   
+   lesson3.getFindlogin().click();
+   lesson3.getClickhome().click();
+   lesson3.getServicesfoto().should(LESSON3.servisecfoto);
+   lesson3.getLatestnewsfoto().should(LESSON3.latestnewsfoto);
+   lesson3.getClickaboutus().click();
+   lesson3.getClickservices().click();
+   lesson3.getClickproducts().click();
 })
+
 })

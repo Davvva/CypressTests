@@ -31,14 +31,23 @@ class Lesson3 {
     getFindlogin(){
         return cy.get('[colspan="2"] > .button');
     }
-    getPassword(){
-        return  cy.get('.input').eq(11);
+    getClickhome(){
+        return   cy.get('#footerPanel > :nth-child(1) > :nth-child(1) > a');
     }
-    getConfirm(){
-        return  cy.get('.input').eq(12);
+    getClickaboutus(){
+        return  cy.get('#footerPanel > :nth-child(1) > :nth-child(2) > a');
     }
-    getREGISTER(){
-        return  cy.get('[colspan="2"] > .button');
+    getClickservices(){
+        return  cy.get('#footerPanel > :nth-child(1) > :nth-child(3) > a');
+    }
+    getClickproducts(){
+        return  cy.get('#footerPanel > :nth-child(1) > :nth-child(4) > a');
+    }
+    getServicesfoto(){
+        return  cy.get('services').find('img').should('have.attr', 'src');
+    }
+    getLatestnewsfoto(){
+        return  cy.get('#footermainPanel').find('img').should('have.attr', 'src');
     }
     }
 
