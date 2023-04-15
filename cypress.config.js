@@ -7,5 +7,8 @@ module.exports = defineConfig({
       return config
       
     },
+    env:{
+      globalUrl:process.env.CYPRESS_HELLO
+    }
   },
 });

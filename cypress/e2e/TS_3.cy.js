@@ -4,7 +4,7 @@ import { LESSON3 } from "../utils/Lesson3";
 describe('Proverka vkladok saita', () => {
 it("Proverka vkladok saita polzovatelem", () => {
    lesson3.visit();
-   lesson3.getForgotpassword().click();   
+   lesson3.getFogot().click();   
    lesson3.getFirstname().type(LESSON3.firstname);
    lesson3.getLastname().type(LESSON3.lastname);
    lesson3.getAdress().type(LESSON3.adress);
@@ -12,11 +12,16 @@ it("Proverka vkladok saita polzovatelem", () => {
    lesson3.getState().type(LESSON3.state);
    lesson3.getZipcode().type(LESSON3.zipcode);
    lesson3.getSSN().type(LESSON3.ssn);
-   lesson3.getFindlogin.click();
-   cy.get('#footerPanel > :nth-child(1) > :nth-child(1) > a').click();
-   cy.get('#footerPanel > :nth-child(1) > :nth-child(2) > a').click();
-   cy.get('#footerPanel > :nth-child(1) > :nth-child(3) > a').click();
-   cy.get('#footerPanel > :nth-child(1) > :nth-child(4) > a').click();
+   lesson3.getFindlogin().click();
+   lesson3.getHome().click();
+   lesson3.getHomefoto().should(LESSON3.bevisible);
+   lesson3.getLatestnews().should(LESSON3.bevisible);
+   lesson3.getHomeup().should(LESSON3.bevisible);
+   lesson3.getAboutusup().should(LESSON3.bevisible);
+   lesson3.getContactup().should(LESSON3.bevisible);
+   lesson3.getAboutus().click();
+   lesson3.getServices().click();
+   lesson3.getProducts().click();
    
 })
 })
