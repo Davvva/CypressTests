@@ -24,4 +24,12 @@ export const DATA ={
       password:'soRRRtin1998',
       confirm:'soRRRtin1998',
    }
-
+   export const EXAMPLE = {
+      Password:'soRRRtin1998',
+      firstname:'David',
+      lastname:'Avdalyan',
+      adress:'4605 Wick Drive, 1680, Cypress',
+      company:'Cypress',
+      city:'Newtown Square',
+      zipcode:'19073',
+   }  

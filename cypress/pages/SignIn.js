@@ -40,6 +40,7 @@ class SignIn {
     getREGISTER(){
         return  cy.get('[colspan="2"] > .button');
     }
+   
     }
 
 
