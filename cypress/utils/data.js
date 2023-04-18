@@ -32,4 +32,13 @@ export const DATA ={
       company:'Cypress',
       city:'Newtown Square',
       zipcode:'19073',
-   }  
+      email:'testFc6ISjK@gmail.com',
+      comment:'TY.Its good market',
+      cardname:'VISA',
+      cardnumber:'4134355757063283',
+      cardcvc:'705',
+      cardmonth:'05',
+      cardyear:'2024'
+   }
+   
+   

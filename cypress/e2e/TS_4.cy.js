@@ -75,7 +75,7 @@ describe("SignIn", () => {
    registration.Bithmonth().select('2').should('have.value', '2');
    registration.Bithyear().select('1998').should('have.value', '1998');
    registration.Newslater().click();
-   registration.Recieve().click();
+   registration.Recieve().click();  
    registration.Firstname().type(registration.generateRandomName(7,''));
    registration.Lastname().type(registration.generateRandomName(8,''));
    registration.Company().type(registration.generateRandomName(7,''));
