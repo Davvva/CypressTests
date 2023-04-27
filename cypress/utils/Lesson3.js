@@ -6,5 +6,6 @@ export const LESSON3={
    state:'Pennsylvania',
    zipcode:'19108',
    ssn:'176-27-XXXX',
-
+   bevisible:'be.visible'
+   
 }

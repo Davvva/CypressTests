@@ -1,5 +1,6 @@
 const { defineConfig } = require("cypress");
 const dotenvPlugin = require('cypress-dotenv');
+require("dotenv").config();
 module.exports = defineConfig({
   e2e: {
     setupNodeEvents(on, config) {
@@ -7,5 +8,8 @@ module.exports = defineConfig({
       return config
       
     },
+    env:{
+      globalUrl:process.env.globalUrl
+    }
   },
 });

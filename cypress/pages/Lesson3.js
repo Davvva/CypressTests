@@ -4,8 +4,8 @@ class Lesson3 {
 
         return  cy.visit('https://parabank.parasoft.com/parabank/register.htm');
     }
-    getFogotpassword(){
-        return ('#loginPanel > :nth-child(2) > a');
+    getFogot(){
+        return cy.get('#loginPanel > :nth-child(2) > a');
     }
     getFirstname(){
        return cy.get('.input').eq(2);
@@ -14,7 +14,7 @@ class Lesson3 {
         return cy.get('.input').eq(3);
     }
     getAdress(){
-        return y.get('.input').eq(4);
+        return cy.get('.input').eq(4);
     }
     getCity(){
         return cy.get('.input').eq(5);
@@ -31,16 +31,35 @@ class Lesson3 {
     getFindlogin(){
         return cy.get('[colspan="2"] > .button');
     }
-    getPassword(){
-        return  cy.get('.input').eq(11);
+    getHome(){
+        return cy.get('#footerPanel > :nth-child(1) > :nth-child(1) > a');
     }
-    getConfirm(){
-        return  cy.get('.input').eq(12);
+    getAboutus(){
+        return cy.get('#footerPanel > :nth-child(1) > :nth-child(2) > a');
     }
-    getREGISTER(){
-        return  cy.get('[colspan="2"] > .button');
+    getServices(){
+        return cy.get('#footerPanel > :nth-child(1) > :nth-child(3) > a');
     }
+    getProducts(){
+        return cy.get('#footerPanel > :nth-child(1) > :nth-child(4) > a');
     }
+    getHomefoto(){
+        return cy.get('span.services');
+    }
+    getLatestnews(){
+        return cy.get('h4');
+    }
+    getHomeup(){
+        return cy.get(".home > a");
+    }
+    getAboutusup() {
+        return cy.get('.aboutus > a');
+    }
+    getContactup(){
+        return cy.get('.contact > a');
+    }
+}
+    
 
 
 
