@@ -2,14 +2,14 @@ import { buyclothes } from "../pages/autoExcersize/Shopingtestcheck.cy";
 import {registration}from "../pages/autoExcersize/SignUp";
 import { EXAMPLE } from "../utils/data";
 describe("Shoping", () => {
-    it("Check Testcasesbtn and Api list for practise", () => {
+    it("Check Testcasesbtn and Api list for practise btn", () => {
         cy.visit(Cypress.env("globalUrl"));
 buyclothes.Testcasesbtn().should('have.css','background-color','rgb(92, 184, 92)');
 buyclothes.Testcasesbtn().realHover().should('have.css','background-color', 'rgb(254, 152, 15)');
 buyclothes.Apilistforpractise().should('have.css','background-color','rgb(92, 184, 92)');
 buyclothes.Apilistforpractise().realHover().should('have.css','background-color', 'rgb(254, 152, 15)');
     });
-    it('Buy Whithout log.on', ()=>{
+    it('Buy Whithout log in', ()=>{
         cy.visit(Cypress.env('globalUrl'));
         buyclothes.Caruselgirlfoto().should('be.visible');
         buyclothes.BuyRS500().click();

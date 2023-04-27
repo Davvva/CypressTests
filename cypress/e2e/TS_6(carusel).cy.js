@@ -42,10 +42,5 @@ describe("Carusel", () => {
     registration.Procesedtocheckoutbtn().click();
     registration.Checkoutheadername().should('contain', 'Checkout'); 
     registration.Loginorregistrationforcontinue().should('contain', 'Register / Login account to proceed on checkout.');
-
-
-    
-
-    
 });
 });

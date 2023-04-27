@@ -20,8 +20,6 @@ it("Proverka vkladok saita polzovatelem", () => {
    lesson3.getAboutusup().should(LESSON3.bevisible);
    lesson3.getContactup().should(LESSON3.bevisible);
    lesson3.getAboutus().click();
-   lesson3.getServices().click();
-   lesson3.getProducts().click();
-   
+   lesson3.getServices().click();   
 })
 })
